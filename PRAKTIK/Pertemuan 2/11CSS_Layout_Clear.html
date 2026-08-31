@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contoh Properti Clear</title>
+    <style>
+        /* contoh clear sederhana */
+        .div1 {
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+        }
+
+        .div2 {
+            border: 1px solid red;
+        }
+
+        .div3 {
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+        }
+
+        .div4 {
+            border: 1px solid red;
+            clear: left;
+            /* pindah ke bawah */
+        }
+
+        /* contoh clearfix */
+        div {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+        }
+
+        .img1 {
+            float: right;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        .img2 {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Tanpa Clear</h2>
+    <div class="div1">div1</div>
+    <div class="div2">div2 teks mengalir di samping div1</div>
+
+    <h2>Dengan Clear</h2>
+    <div class="div3">div3</div>
+    <div class="div4">div4 turun ke bawah div3</div>
+
+    <hr>
+
+    <h2>Clearfix</h2>
+    <p>Contoh tanpa dan dengan clearfix</p>
+
+    <div>
+        <img class="img1" src="img/icon.jpg" alt="logo" width="170" height="170">
+        Teks mengalir tanpa clearfix
+    </div>
+
+    <br>
+
+    <div class="clearfix">
+        <img class="img2" src="img/icon.jpg" alt="logo" width="170" height="170">
+        Teks rapi dengan clearfix
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Lengkap</title>
+    <style>
+        /* ====== MARGIN DAN SHADOW ====== */
+        p {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #000000;
+        }
+
+        em {
+            background-color: #cccccc;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .dropShadow {
+            text-shadow: 2px 2px 4px #aaaaaa;
+        }
+
+        .indent {
+            text-indent: 3em;
+        }
+
+        /* ====== TEXT TRANSFORM ====== */
+        p.none {
+            text-transform: none;
+        }
+
+        p.capitalize {
+            text-transform: capitalize;
+        }
+
+        p.uppercase {
+            text-transform: uppercase;
+        }
+
+        p.lowercase {
+            text-transform: lowercase;
+        }
+
+        /* ====== LETTER SPACING ====== */
+        .letter1 {
+            letter-spacing: 3px;
+        }
+
+        .letter2 {
+            letter-spacing: 0.5em;
+        }
+
+        .letter3 {
+            letter-spacing: -1px;
+        }
+
+        /* ====== WORD SPACING ====== */
+        .word1 {
+            word-spacing: 30px;
+        }
+
+        .word2 {
+            word-spacing: 0.5em;
+        }
+
+        .word3 {
+            word-spacing: -1px;
+        }
+
+        /* ====== WHITE SPACE ====== */
+        .pre {
+            white-space: pre;
+        }
+
+        .preline {
+            white-space: pre-line;
+        }
+
+        .prewrap {
+            white-space: pre-wrap;
+        }
+
+        .nowrap {
+            white-space: nowrap;
+        }
+
+        .normal {
+            white-space: normal;
+        }
+
+        /* ====== DIRECTION ====== */
+        p.ltr {
+            direction: ltr;
+        }
+
+        p.rtl {
+            direction: rtl;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BAGIAN MARGIN DAN SHADOW -->
+    <h1 class="dropShadow">Judul dengan Bayangan Teks</h1>
+    <p>Paragraf ini berisi beberapa <em>kata kunci</em> yang memiliki margin tambahan dan bayangan.</p>
+    <p>Setiap <em>kata kunci</em> juga memiliki latar abu-abu untuk menunjukkan margin.</p>
+    <p>Antar paragraf juga memiliki margin atas dan bawah.</p>
+    <p>Paragraf ini rata kiri secara default.</p>
+    <p class="indent">Hanya baris pertama paragraf ini yang memiliki indentasi 3em.</p>
+
+    <hr>
+
+    <!-- TEXT TRANSFORM -->
+    <h2>Text Transform</h2>
+    <p class="none">Teks ini belum di transformasikan</p>
+    <p class="capitalize">huruf pertama pada setiap karakter menjadi kapital</p>
+    <p class="uppercase">seluruh teks ini akan menjadi huruf besar</p>
+    <p class="lowercase">SELURUH TEKS INI AKAN MENJADI HURUF KECIL</p>
+
+    <hr>
+
+    <!-- LETTER SPACING -->
+    <h2>Letter Spacing</h2>
+    <p>ini adalah normal letter spacing</p>
+    <p class="letter1">menggunakan letter spacing 3px</p>
+    <p class="letter2">menggunakan letter spacing 0.5em</p>
+    <p class="letter3">menggunakan letter spacing -1px</p>
+
+    <hr>
+
+    <!-- WORD SPACING -->
+    <h2>Word Spacing</h2>
+    <p class="word1">contoh word spacing 30px</p>
+    <p class="word2">contoh word spacing 0.5em</p>
+    <p class="word3">contoh word spacing -1px</p>
+
+    <hr>
+
+    <!-- WHITE SPACE -->
+    <h2>White Space</h2>
+    <h3>normal white space</h3>
+    <p class="normal">
+        Contoh ini menunjukkan properti white space. Anda dapat melihat hasil
+        dari berbagai properti white-space di bawah ini.
+    </p>
+
+    <h3>nowrap white space</h3>
+    <p class="nowrap">
+        Contoh ini menunjukkan properti white space tanpa pindah baris.
+    </p>
+
+    <h3>pre white space</h3>
+    <p class="pre">
+        Contoh ini menunjukkan properti
+        white space dengan format spasi dan baris tetap.
+    </p>
+
+    <h3>pre-line white space</h3>
+    <p class="preline">
+        Contoh ini menunjukkan properti white space
+        yang mengabaikan spasi tambahan tetapi mempertahankan pindah baris.
+    </p>
+
+    <h3>pre-wrap white space</h3>
+    <p class="prewrap">
+        Contoh ini menunjukkan properti white space
+        dengan spasi dan baris tetap serta teks tetap terbungkus.
+    </p>
+
+    <hr>
+
+    <!-- DIRECTION -->
+    <h2>Direction</h2>
+    <h3>Arah kiri ke kanan (LTR)</h3>
+    <p class="ltr">
+        Contoh ini menggunakan direction LTR, teks berjalan dari kiri ke kanan.
+    </p>
+
+    <h3>Arah kanan ke kiri (RTL)</h3>
+    <p class="rtl">
+        Contoh ini menggunakan direction RTL, teks berjalan dari kanan ke kiri.
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<style>
+        body, h1, p, img, b {
+            border-style: solid;    /* garis border solid */
+            border-width: 2px;      /* ketebalan border 2px */
+            border-color: #000000;  /* warna border hitam */
+            padding: 2px;           /* jarak isi dengan border */
+        }
+        h1, b {
+            background-color: #cccccc;
+        }
+</style>
+<body>
+    <!-- Judul dengan border + background abu -->
+    <h1>Berpikir Di Dalam Kotak</h1>
+
+    <!-- Paragraf dengan <b> (teks tebal) yang juga ikut punya background abu -->
+    <p class="description">
+        Ketika Anda mendesain halaman web dengan CSS, 
+        Anda harus mulai berpikir dalam hal <b>kotak</b>.
+    </p>
+
+    <p><!-- Paragraf biasa, masih dalam aturan border hitam -->
+        Setiap elemen diperlakukan seolah-olah menghasilkan kotak baru. 
+        Setiap kotak dapat memiliki aturan baru yang terkait dengannya.
+    </p>
+
+    <!-- Gambar juga ikut kena border hitam + padding -->
+    <img src="img\logo.jpg" alt="Bagaimana CSS memperlakukan sebuah kotak">
+
+    <p><!-- Paragraf dengan contoh border + padding + background di <b> -->
+        Seperti yang Anda lihat dari diagram di atas, 
+        setiap kotak memiliki <b>border</b>. 
+        Antara konten dan perbatasan Anda dapat memiliki <b>padding</b>, 
+        dan di luar perbatasan Anda dapat memiliki <b>margin</b> 
+        untuk memisahkan kotak ini dari kotak di sebelahnya.
+    </p>
+</body>
