@@ -1,0 +1,98 @@
+
+:root {
+    color-scheme: light dark;
+
+    /* Define the global color scheme for both light and dark theme */
+    --bg-color: light-dark(#eeeeee, #121212);
+    --text-color: light-dark(#333333, #e0e0e0);
+    --text-size: 19px;
+    --link-color-when-hovered: light-dark(#8fbc8f,#ffebcd);
+}
+
+
+
+
+body {
+    margin: 0;
+    min-height: 100vh; /* vh stands for viewport height that is relative to the browser */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: var(--text-size);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+
+nav {
+    padding: 15px;
+    text-align: center;
+    background: var(--text-color);
+}
+
+article {
+    max-width: 900px;
+    font-size: clamp(0.5rem, 1.4rem, 5rem); /* for dynamic size, paramaters: min_size, preferred_size, max_size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    box-sizing: border-box; /* to ensure the padding didn't break the sizing */
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+ul.profile {
+    list-style: none;
+    display: table;
+    padding: 20px 20px 20px 100px;
+    margin-left: 0;
+    text-align: justify;
+
+}
+
+ul.profile > li {
+    display: table-row;
+}
+
+ul.profile > li > b {
+    display: table-cell;
+    padding-right: 3em;
+}
+
+ul.profile > li > span {
+    display: table-cell;
+    padding-right: 1em;
+}
+
+body > nav > a {
+    text-decoration: none;
+}
+
+body > nav > a:link {
+    color: aqua;
+}
+
+body > nav > a:hover {
+    
+    color: var(--link-color-when-hovered);
+    
+}
