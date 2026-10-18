@@ -39,13 +39,20 @@ div > p {
 
 /* Descendant Selector */
 div h2 {
-  font-size: 26px;
+  font-size: 30px;
   text-align: center;
+  color:blue
+}
+
+div h3 {
+  text-align: right;
+  background-color: cadetblue;
+  color: lightcoral;
 }
 
 /* Adjacent Sibling Selector */
 h1 + h2 {
-  color: red;
+  color: yellowgreen;
 }
 
 /* General Sibling Selector */
