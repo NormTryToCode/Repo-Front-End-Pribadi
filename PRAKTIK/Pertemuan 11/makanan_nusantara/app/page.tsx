@@ -1,15 +1,19 @@
-"use client";
-import React from "react";
-import Navbar from "../components/navbar";
-import HeroSection from "../components/herosection";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import HeroCarousel from "@/components/hero/HeroCarousel";
+import WhyUs from "@/components/sections/WhyUs";
+import AboutUs from "@/components/sections/AboutUs";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
       <main>
-        <HeroSection></HeroSection>
+        <HeroCarousel />
+        <WhyUs />
+        <AboutUs />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
