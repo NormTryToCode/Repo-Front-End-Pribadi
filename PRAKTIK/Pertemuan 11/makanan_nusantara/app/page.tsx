@@ -1,19 +1,15 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import HeroCarousel from "@/components/hero/HeroCarousel";
-import WhyUs from "@/components/sections/WhyUs";
-import AboutUs from "@/components/sections/AboutUs";
+"use client";
+import React from "react";
+import Navbar from "../components/navbar";
+import HeroSection from "../components/herosection";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Navbar />
       <main>
-        <HeroCarousel />
-        <WhyUs />
-        <AboutUs />
+        <HeroSection></HeroSection>
       </main>
-      <Footer />
-    </>
+    </div>
   );
 }
