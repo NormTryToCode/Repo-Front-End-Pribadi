@@ -1,0 +1,162 @@
+.hero {
+  position: relative;
+  background: var(--nusa-maroon-deep);
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(600px, 82vh, 780px);
+  padding: 2rem 0 5rem;
+  overflow: hidden;
+  color: var(--nusa-cream);
+}
+
+.backdrop {
+  object-fit: cover;
+  filter: blur(26px) saturate(1.2);
+  transform: scale(1.25);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(53, 18, 11, 0.92) 0%, rgba(53, 18, 11, 0.65) 55%, rgba(53, 18, 11, 0.4) 100%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.category {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  margin-bottom: 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--nusa-maroon-deep);
+  background: var(--nusa-saffron);
+  border-radius: 999px;
+}
+
+.title {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.description {
+  max-width: 520px;
+  margin-bottom: 1.75rem;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: rgba(255, 247, 234, 0.88);
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 6px solid var(--nusa-cream);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: var(--nusa-sand);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.45);
+}
+
+.photo {
+  object-fit: cover;
+}
+
+/* Kontrol & indikator carousel (bawaan Bootstrap, di-tema ulang) */
+.carousel :global(.carousel-indicators) {
+  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+}
+
+.carousel :global(.carousel-indicators [data-bs-target]) {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--nusa-cream);
+  opacity: 0.5;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel :global(.carousel-indicators .active) {
+  width: 34px;
+  border-radius: 999px;
+  background-color: var(--nusa-saffron);
+  opacity: 1;
+}
+
+.carousel :global(.carousel-control-prev),
+.carousel :global(.carousel-control-next) {
+  width: 8%;
+  z-index: 2;
+}
+
+.carousel :global(.carousel-control-prev-icon),
+.carousel :global(.carousel-control-next-icon) {
+  width: 3rem;
+  height: 3rem;
+  padding: 1.1rem;
+  background-color: rgba(53, 18, 11, 0.55);
+  background-size: 45%;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.carousel :global(.carousel-control-prev:hover .carousel-control-prev-icon),
+.carousel :global(.carousel-control-next:hover .carousel-control-next-icon) {
+  background-color: var(--nusa-red);
+}
+
+/* Responsif */
+@media (max-width: 991.98px) {
+  .slide {
+    min-height: 0;
+    padding: 2.5rem 0 5rem;
+  }
+
+  .overlay {
+    background: linear-gradient(180deg, rgba(53, 18, 11, 0.7) 0%, rgba(53, 18, 11, 0.92) 100%);
+  }
+
+  .frame {
+    aspect-ratio: 16 / 10;
+    max-width: 560px;
+    margin-inline: auto;
+  }
+
+  .textCol {
+    text-align: center;
+  }
+
+  .textCol > div,
+  .description {
+    justify-content: center;
+    margin-inline: auto;
+  }
+}
+
+/* Di HP: andalkan swipe + indikator, sembunyikan panah agar tidak menutupi teks */
+@media (max-width: 767.98px) {
+  .carousel :global(.carousel-control-prev),
+  .carousel :global(.carousel-control-next) {
+    display: none;
+  }
+
+  .frame {
+    border-width: 4px;
+    border-radius: 1.1rem;
+  }
+}

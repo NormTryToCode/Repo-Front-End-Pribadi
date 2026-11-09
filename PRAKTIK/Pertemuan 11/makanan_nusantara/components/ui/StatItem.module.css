@@ -1,0 +1,17 @@
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--nusa-red);
+}
+
+.label {
+  font-size: 0.85rem;
+  color: rgba(43, 24, 16, 0.7);
+}

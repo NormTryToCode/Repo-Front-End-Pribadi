@@ -1,0 +1,85 @@
+.navbar {
+  min-height: var(--navbar-height);
+  background: var(--nusa-maroon);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--nusa-cream);
+}
+
+.brandMark {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--nusa-saffron);
+  color: var(--nusa-maroon-deep);
+  font-size: 1.15rem;
+}
+
+.link {
+  position: relative;
+  padding: 0.6rem 1rem !important;
+  color: rgba(255, 247, 234, 0.8) !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/* Garis bawah: tumbuh saat hover, penuh saat menu aktif */
+.link::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.2rem;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--nusa-saffron);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.link:hover {
+  color: #fff !important;
+}
+
+.link:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* Penanda menu aktif */
+.active {
+  color: var(--nusa-saffron) !important;
+  font-weight: 700;
+}
+
+.active::after,
+.active:hover::after {
+  transform: scaleX(1);
+}
+
+/* Mobile: penanda aktif berupa garis di sisi kiri */
+@media (max-width: 991.98px) {
+  .link {
+    padding: 0.75rem 1rem !important;
+    border-left: 4px solid transparent;
+  }
+
+  .link::after {
+    display: none;
+  }
+
+  .active {
+    border-left-color: var(--nusa-saffron);
+    background: rgba(233, 162, 59, 0.12);
+  }
+}

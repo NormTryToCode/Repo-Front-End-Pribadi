@@ -1,0 +1,41 @@
+.card {
+  height: 100%;
+  padding: 2rem 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(74, 28, 18, 0.08);
+  border-radius: 1.25rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(74, 28, 18, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--nusa-saffron);
+  box-shadow: 0 14px 32px rgba(74, 28, 18, 0.14);
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 1.25rem;
+  font-size: 2rem;
+  background: var(--nusa-sand);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px var(--nusa-saffron);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--nusa-maroon);
+  margin-bottom: 0.6rem;
+}
+
+.text {
+  margin: 0;
+  color: rgba(43, 24, 16, 0.75);
+  font-size: 0.98rem;
+}

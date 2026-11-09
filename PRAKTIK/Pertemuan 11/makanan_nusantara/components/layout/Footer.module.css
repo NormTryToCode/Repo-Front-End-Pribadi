@@ -1,0 +1,80 @@
+.footer {
+  background: var(--nusa-maroon-deep);
+  color: var(--nusa-cream);
+}
+
+.body {
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--nusa-saffron);
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--nusa-saffron);
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.muted {
+  color: rgba(255, 247, 234, 0.72);
+  font-size: 0.95rem;
+}
+
+.link {
+  color: rgba(255, 247, 234, 0.72);
+  font-size: 0.95rem;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  word-break: break-word;
+}
+
+.link:hover {
+  color: var(--nusa-saffron);
+  padding-left: 4px;
+}
+
+.socials {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+.social {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  color: var(--nusa-cream);
+  border: 1px solid rgba(255, 247, 234, 0.35);
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.social:hover {
+  background: var(--nusa-saffron);
+  border-color: var(--nusa-saffron);
+  color: var(--nusa-maroon-deep);
+}
+
+.bottom {
+  padding: 1rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 247, 234, 0.6);
+}

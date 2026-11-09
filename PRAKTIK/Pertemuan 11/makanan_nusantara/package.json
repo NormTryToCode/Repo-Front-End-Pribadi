@@ -1,0 +1,26 @@
+{
+  "name": "landing_page_pertemuan11",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@mui/material": "^9.5.0",
+    "@mui/styled-engine-sc": "^9.5.0",
+    "bootstrap": "^5.3.8",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "19.3.0",
+    "styled-components": "^6.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

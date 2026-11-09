@@ -1,0 +1,91 @@
+:root {
+  --nusa-ink: #2b1810;
+  --nusa-maroon: #4a1c12;
+  --nusa-maroon-deep: #35120b;
+  --nusa-red: #b23a1e;
+  --nusa-saffron: #e9a23b;
+  --nusa-cream: #fff7ea;
+  --nusa-sand: #f6e8d0;
+  --nusa-green: #3f6b4b;
+  --navbar-height: 72px;
+
+  --bs-body-bg: var(--nusa-cream);
+  --bs-body-color: var(--nusa-ink);
+  --bs-body-font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--nusa-cream);
+  color: var(--nusa-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Section yang dituju anchor tidak tertutup navbar sticky */
+section[id],
+footer[id] {
+  scroll-margin-top: var(--navbar-height);
+}
+
+/* Tombol bertema */
+.btn-nusa {
+  --bs-btn-bg: var(--nusa-saffron);
+  --bs-btn-border-color: var(--nusa-saffron);
+  --bs-btn-color: var(--nusa-maroon-deep);
+  --bs-btn-hover-bg: #f2b45a;
+  --bs-btn-hover-border-color: #f2b45a;
+  --bs-btn-hover-color: var(--nusa-maroon-deep);
+  --bs-btn-active-bg: #d98f26;
+  --bs-btn-active-border-color: #d98f26;
+  --bs-btn-active-color: var(--nusa-maroon-deep);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.65rem 1.5rem;
+}
+
+.btn-nusa-outline {
+  --bs-btn-color: var(--nusa-cream);
+  --bs-btn-border-color: rgba(255, 247, 234, 0.6);
+  --bs-btn-hover-bg: var(--nusa-cream);
+  --bs-btn-hover-border-color: var(--nusa-cream);
+  --bs-btn-hover-color: var(--nusa-maroon-deep);
+  --bs-btn-active-bg: var(--nusa-cream);
+  --bs-btn-active-color: var(--nusa-maroon-deep);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.65rem 1.5rem;
+}
+
+/* Pita motif zig-zag bergaya batik */
+.batik-strip {
+  height: 10px;
+  background:
+    linear-gradient(135deg, var(--nusa-saffron) 25%, transparent 25%) -10px 0 / 20px 10px,
+    linear-gradient(225deg, var(--nusa-saffron) 25%, transparent 25%) -10px 0 / 20px 10px,
+    linear-gradient(315deg, var(--nusa-saffron) 25%, transparent 25%) 0 0 / 20px 10px,
+    linear-gradient(45deg, var(--nusa-saffron) 25%, transparent 25%) 0 0 / 20px 10px;
+  background-color: var(--nusa-maroon);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
